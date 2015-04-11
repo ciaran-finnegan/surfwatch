@@ -1,0 +1,39 @@
+<template name="layout">
+
+    <div class="hero-unit">
+        <h1>SurfWatch</h1>
+        <h2>testing - wind only</h2>
+    </div>
+
+    <select class="wmo">
+        <option>94749</option>
+        <option>95745</option>
+        <option>95748</option>
+        <option>95749</option>
+        <option>95940</option>
+    </select>
+
+    <div class="page-header">
+        <h1>
+            {{#if windreport}}
+                 <small>{{windreport}}</small>
+            {{/if}}
+        </h1>
+    </div>
+    <select class="mswSpotId">
+        <option>1042</option>
+        <option>855</option>
+        <option>1041</option>
+        <option>1186</option>
+    </select>
+
+    <div class="page-header">
+        <h1>
+            {{#if surfreport}}
+                <small>{{surfreport}}</small>
+            {{/if}}
+        </h1>
+    </div>
+
+</template>
+
